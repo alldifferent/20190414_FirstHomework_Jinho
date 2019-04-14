@@ -83,13 +83,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=" 있어요 "
+                    android:text="있어요 "
                     android:textSize="20dp"
                     />
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/dot"
                     android:layout_gravity="center"
                     />
 
@@ -107,17 +107,18 @@
             android:orientation="vertical"
             android:gravity="center"
             android:background="#ffffff"
+            android:layout_marginTop="10dp"
             >
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@mipmap/ic_launcher"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/cha"
                 />
 
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
@@ -130,22 +131,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="이름"
+                android:textColorHint="#7848d5"
                 />
             <EditText
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="이메일"
+                android:textColorHint="#7848d5"
                 />
 
             <TextView
                 android:layout_marginTop="15dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="50dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="이벤트 참여 등 확인을 위해 고객님의 이메일 주소를 입력해주세요."
-                android:textSize="17sp"
+                android:textSize="15sp"
                 />
 
     </LinearLayout>
@@ -173,28 +176,66 @@
                     android:textStyle="bold"
 
                     />
-
-                <CheckBox
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="서비스 이용약관"
-                    />
+                    android:orientation="horizontal"
+                    >
 
-                <CheckBox
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="서비스 이용약관 (필수)"
+                        android:layout_weight="1"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
+                    android:orientation="horizontal"
+                    >
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="개인정보처리방침 (필수)"/>
 
-                <CheckBox
+                </LinearLayout>
+
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
+                    android:orientation="horizontal"
+                    >
 
-                <CheckBox
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="유료상품 이용약관 (필수)"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp" />
+                    android:orientation="horizontal"
+                    >
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="이벤트 마케팅 수신동의 (선택)"/>
+
+                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -216,11 +257,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:background="#f9f9f9"
+            android:layout_marginTop="10dp"
             >
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="다음"
+                android:background="#7848d5"
+                android:textColor="#ffffff"
 
                 />
         </LinearLayout>
