@@ -191,6 +191,14 @@
                         android:id="@+id/agreementCkBx"
                         />
 
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginRight="10dp"
+                        />
+
 
                 </LinearLayout>
 
@@ -205,6 +213,15 @@
                         android:layout_marginTop="5dp"
                         android:text="개인정보처리방침 (필수)"
                         android:id="@+id/agreementCkBx1"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
                         />
 
                 </LinearLayout>
@@ -222,6 +239,15 @@
                         android:layout_marginTop="5dp"
                         android:text="유료상품 이용약관 (필수)"
                         android:id="@+id/agreementCkBx2"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
                         />
 
                 </LinearLayout>
@@ -237,6 +263,15 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="이벤트 마케팅 수신동의 (선택)"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
                         />
 
                 </LinearLayout>
