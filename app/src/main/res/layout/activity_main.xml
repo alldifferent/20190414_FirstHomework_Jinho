@@ -4,60 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
     android:background="#ffffff"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffffff"
-            android:layout_marginTop="30dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="20dp"
-            android:orientation="vertical"
-            >
+            android:background="#ffffff"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="카카오 계정으로 회원가입"
-                    android:textStyle="bold"
                     android:textSize="20dp"
-                    />
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text=" 하시면 지상파"
-                    android:textSize="20dp"
-                    />
+                    android:textSize="20dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="포함 50여개 LIVE 채널을 "
-                    android:textSize="20sp"
-                    />
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -66,92 +61,85 @@
                     android:textStyle="bold"
 
                     />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="로 즐길 수"
-                    android:textSize="20dp"
-                    />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                >
+                android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="있어요 "
-                    android:textSize="20dp"
-                    />
+                    android:textSize="20dp" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/dot"
                     android:layout_gravity="center"
-                    />
+                    android:src="@drawable/dot" />
 
             </LinearLayout>
 
 
-
-
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="#ffffff"
             android:layout_marginTop="10dp"
-            >
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="110dp"
                 android:layout_height="110dp"
-                android:src="@drawable/cha"
-                />
+                android:src="@drawable/cha" />
 
         </LinearLayout>
+
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
             android:background="#ffffff"
-            >
+            android:orientation="vertical">
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="이름"
-                android:textColorHint="#7848d5"
-                />
+                android:textColorHint="#7848d5" />
+
             <EditText
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:hint="이메일"
-                android:textColorHint="#7848d5"
-                />
+                android:textColorHint="#7848d5" />
 
             <TextView
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="50dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50dp"
                 android:text="이벤트 참여 등 확인을 위해 고객님의 이메일 주소를 입력해주세요."
-                android:textSize="15sp"
-                />
+                android:textSize="15sp" />
 
-    </LinearLayout>
+        </LinearLayout>
 
 
         <LinearLayout
@@ -176,28 +164,26 @@
                     android:textStyle="bold"
 
                     />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <CheckBox
+                        android:id="@+id/agreementCkBx"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="서비스 이용약관 (필수)"
                         android:layout_weight="1"
-                        android:id="@+id/agreementCkBx"
-                        />
+                        android:text="서비스 이용약관 (필수)" />
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center"
-                        android:src="@mipmap/ic_launcher"
                         android:layout_marginRight="10dp"
-                        />
+                        android:src="@drawable/image" />
 
 
                 </LinearLayout>
@@ -205,24 +191,22 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
+
                     <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="개인정보처리방침 (필수)"
                         android:id="@+id/agreementCkBx1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
-                        />
+                        android:text="개인정보처리방침 (필수)" />
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_marginRight="10dp"
                         android:layout_gravity="center"
-                        />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/image" />
 
                 </LinearLayout>
 
@@ -230,49 +214,43 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <CheckBox
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="유료상품 이용약관 (필수)"
                         android:id="@+id/agreementCkBx2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
                         android:layout_weight="1"
-                        />
+                        android:text="유료상품 이용약관 (필수)" />
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"
-                        android:layout_marginRight="10dp"
                         android:layout_gravity="center"
-                        />
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/image" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <CheckBox
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="이벤트 마케팅 수신동의 (선택)"
                         android:layout_weight="1"
-                        />
+                        android:text="이벤트 마케팅 수신동의 (선택)" />
 
                     <ImageView
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:src="@mipmap/ic_launcher"
                         android:layout_gravity="center"
                         android:layout_marginRight="10dp"
-                        />
+                        android:src="@drawable/image" />
 
                 </LinearLayout>
 
@@ -295,22 +273,22 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="#f9f9f9"
             android:layout_marginTop="10dp"
-            >
+            android:background="#f9f9f9"
+            android:orientation="vertical">
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="다음"
                 android:background="#7848d5"
+                android:text="다음"
                 android:textColor="#ffffff"
 
                 />
         </LinearLayout>
 
 
-</LinearLayout>
+    </LinearLayout>
 </LinearLayout>
 
 
